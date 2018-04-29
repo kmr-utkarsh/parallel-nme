@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# @name
+#	datset_stats
+# @desc
+#	Count rows and columns of data in a csv file. This
+# 	script is used by the cudaGTOM program
+# @author
+#	Kumar Utkarsh <kumarutkarsh.ingen@gmail.com>
+#	Bikash Jaiswal <bjjaiswal@gmail.com>
+# 
+# @usage
+#	./dataset_stats input_file
+#
+#	The input file can contain comments/header-info beginning
+#	with '#', which the script will ignore.
+#
+#
+
+if [ "$#" -eq 0 ]; then
+       echo "Error: no input file specified"
+       exit 1
+fi       
+
+
+if [ ! -f "$1" ]; then
+	echo "Error: specified file does not exist"
+	exit 1
+fi
+
+ROWS=$(grep -cv "^#" "$1")
+COLS=$(grep -m 1 -v "^#" "$1" | awk --field-separator="," "{ print NF }")
+
+echo $ROWS
+echo $COLS
+
