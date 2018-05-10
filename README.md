@@ -27,7 +27,7 @@ This will generate the binary `cudaGTOM`.
 
 ```sh
 $ ./cudaGTOM
-Usage: ./cudaGTOM <input file> <output file> <m>;
+Usage: ./cudaGTOM <input file> <output file> <m>
 ```
 The `dataset_stats` file is a shell-script used by the `cudaGTOM` program, make sure to keep them both in the same directory.
 
