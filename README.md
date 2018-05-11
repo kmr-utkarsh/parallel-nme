@@ -5,7 +5,6 @@
 The following is the code for the paper:
 
 	[yet to be published]
-
 ---
 
 This repository contains code for computing the GTOMm matrices from the co-expression network obtained from a microarray dataset.
