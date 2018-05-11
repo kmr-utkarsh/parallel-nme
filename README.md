@@ -43,14 +43,7 @@ $ ./cudaGTOM metastasis-cen-0.54.csv metastasis-module-0.54-GTOM2.csv 2
 
 The parameter `m` corresponds to GTOMm, usually in the range 1-4 (GTOM1, GTOM2, GTOM3, ...).
 
-## Contributors
 
-* Kumar Utkarsh <kumarutkarsh.ingen@gmail.com>
-* Bikash Jaiswal <bjjaiswal@gmail.com>
-
-## License & copyright
-
-Licensed under the [GNU GPLv3](LICENSE)
 
 
 
